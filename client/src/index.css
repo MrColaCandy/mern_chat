@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.modal-enter {
+  transform: translateY(-100%);
+}
+.modal-enter-active {
+  transform: translateY(0);
+  transition: transform 500ms ease;
+}
+.modal-exit {
+  transform: translateY(0);
+  transition: transform 500ms ease;
+}
+.modal-exit-active {
+  transform: translateY(-100%);
+}
+
+.overlay-enter {
+  opacity: 0;
+}
+.overlay-enter-active {
+  opacity: 1;
+  transition: opacity 700ms ease;
+}
+.overlay-exit {
+  opacity: 1;
+  transition: opacity 700ms ease;
+}
+.overlay-exit-active {
+  opacity: 0;
+}
